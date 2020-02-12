@@ -2,8 +2,6 @@ github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/go-resty/resty/v2 v2.1.0 h1:Z6IefCpUMfnvItVJaJXWv/pMiiD11So35QgwEELsldE=
 github.com/go-resty/resty/v2 v2.1.0/go.mod h1:dZGr0i9PLlaaTD4H/hoZIDjQ+r6xq8mgbRzHZf7f2J8=
-github.com/jaswdr/faker v1.0.2 h1:3iRZztCC4oU67i67qGcyhIxeKgHQQH/iCifJOj3uOSI=
-github.com/jaswdr/faker v1.0.2/go.mod h1:9S4x1SRPC3m+iLgZTx2HZ0/R1/B0hwuL8uvOAiuJNtg=
 github.com/jessevdk/go-flags v1.4.0 h1:4IU2WS7AumrZ/40jfhf4QVDMsQwqA7VEHozFRrGARJA=
 github.com/jessevdk/go-flags v1.4.0/go.mod h1:4FA24M0QyGHXBuZZK/XkWh8h0e1EYbRYJSGM75WSRxI=
 github.com/motemen/go-loghttp v0.0.0-20170804080138-974ac5ceac27 h1:uAI3rnOT1OSSY4PUtI/M1orb3q0ewkovwd3wr8xSno4=

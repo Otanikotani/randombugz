@@ -5,7 +5,6 @@ import (
 	"encoding/csv"
 	"fmt"
 	"github.com/go-resty/resty/v2"
-	"github.com/jaswdr/faker"
 	"github.com/jessevdk/go-flags"
 	_ "github.com/motemen/go-loghttp/global"
 	"github.com/trilogy-group/randombugz/fbapi"
@@ -134,9 +133,8 @@ func readCaseInput(reader *csv.Reader) []CaseInput {
 }
 
 func createNewProject(person Person) (int, string) {
-	fakeNames := faker.New()
 	uniqueSuffix := strconv.Itoa(rand.Int() % 100)
-	randomTitle := fakeNames.Lorem().Word() + uniqueSuffix
+	randomTitle := fbapi.Lorem() + uniqueSuffix
 	fmt.Printf("Create '%s' project\n", randomTitle)
 	ixProject := fbapi.CreateProject(fbapi.JSON{
 		"token":                  person.token,
@@ -147,9 +145,8 @@ func createNewProject(person Person) (int, string) {
 }
 
 func createNewMilestone(ixProject int, person Person) int {
-	fakeNames := faker.New()
 	uniqueSuffix := strconv.Itoa(rand.Int() % 100)
-	randomTitle := fakeNames.Payment().CreditCardType() + uniqueSuffix
+	randomTitle := fbapi.Payment() + uniqueSuffix
 	ixProjectStr := strconv.Itoa(ixProject)
 	fmt.Printf("Create '%s' milestone\n", randomTitle)
 	return fbapi.CreateMilestone(fbapi.JSON{

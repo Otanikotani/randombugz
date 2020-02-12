@@ -3,7 +3,7 @@ Simple program to generate cases in a given FogBugz instance.
 
 # Running via Go
 ```
-go run main.go --file-input <filepath> --fb-token <your-token> --fb-instance <your-fb-instance> 
+go run main.go --file-input <filepath> --fb-token <your-token> --fb-instance <your-fb-instance> --email-prefix myemail  
 ```
 
 Where:
@@ -13,6 +13,8 @@ Where:
 `<your-fb-instance>` - instance of the FB to insert cases into. For example https://sandbox.fogbugz.com
 
 `<filepath>` - path to the .csv file with the following structure:
+
+`<email-prefix>` - Used for creating new users. New users will have emails: `<email-prefix>+<random-number>@gmail.com`
 
 ```csv
 original;elapsed;milestone;user
